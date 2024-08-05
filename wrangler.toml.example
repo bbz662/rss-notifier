@@ -1,0 +1,12 @@
+name = "rss-discord-notifier"
+main = "src/index.ts"
+compatibility_date = "2023-05-18"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "rss-db"
+database_id = "your-db-id"  # TODO
+migrations_dir = "migrations"
+
+[triggers]
+crons = ["*/15 * * * *"]
